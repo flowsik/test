@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
+    <style>
+    *{margin: 0; padding: 0;}
+        .total{width: 1200px; height: 600px;
+        margin: 0 auto; position: relative;
+        background-color: blue;}
+        .aside1{  width:auto;
+          float: left; position: relative;
+        text-align: center;}
+        .aside2{ width: 300px; height: 367px; margin-top: 10px; float: left; position: relative;
+        text-align: center;}
+        .aside3{ width: 300px; height: 367px;  margin-top: 10px;  float: left; position: relative;
+        text-align: center;}
+        .aside4{ width: 300px; height: 367px; float: left; position: relative;
+        text-align: center;}
+        .aside5{ width: 300px; height: 367px; float: left; position: relative;
+        text-align: center;}
+        ol{display: block; width: 100px;
+        border: 1px solid black; height: 50px;}
+
+
+    </style>
+
     <meta charset="utf-8">
-    <title>아톰 업데이트</title>
+    <title></title>
   </head>
   <body>
-    나는 자랑스런 태극기 앞에 
-    조국과 민족의...
-    <h1>종강이다</h1>
+    <div class="total">
+      <div class="aside1">
+        <ul>
+          <ol><a href="test01.html">HOME</a></ol>
+          <ol><a href="test02.html">행사 소개</a></ol>
+          <ol><a href="test03.html">제품안내</a></ol>
+          <ol><a href="test04.html">메시지</a></ol>
+          <ol><a href="test05.html">컬러</a></ol>
+        </ul>
+      </div>
+    <div class="aside2">
+      <img class="pic" id="pic1" src="img01_01.jpg" alt="" onmouseover="this.src='img01.jpg'"
+      onmouseout="this.src='img01_01.jpg'">
+    </div>
+
+    <div class="aside3">
+      <img class="pic" id="pic2" src="img02_01.jpg" alt="" onmouseover="this.src='img02.jpg'"
+      onmouseout="this.src='img02_01.jpg'">
+    </div>
+
+    <div class="aside4">
+      <img class="pic" id="pic3" src="img03_01.jpg" alt="" onmouseover="this.src='img03.jpg'"
+      onmouseout="this.src='img03_01.jpg'">
+
+      <div class="aside5">
+        <img class="pic" id="pic4" src="img04_01.jpg"alt="" onmouseover="this.src='img04.jpg'"
+        onmouseout="this.src='img04_01.jpg'">
+    </div>
+  </div>
+
+</div>
+
+
+
+  <!-- 클래스가 여러개있으면 배열 -->
+  <!-- click 마우스 버튼 클릭 -->
+  <!-- dblclick 마우스 더블 클릭 -->
+  <!-- mousedown 마우스 버튼을 눌렀을 때 -->
+  <!-- mouseup마우스 버튼을 누르고 떼었을때 -->
+
+<script type="text/javascript">
+      var img1 = document.getElementsByClassName('pic')[0];
+        var img2 = document.getElementsByClassName('pic')[1];
+          var img3 = document.getElementsByClassName('pic')[2];
+           var img4 = document.getElementsByClassName('pic')[3];
+  var pic1 = document.getElementById('pic1');
+    var pic2 = document.getElementById('pic2');
+      var pic3 = document.getElementById('pic3');
+       var pic4 = document.getElementById('pic4');
+  var count1 = 0;
+    var count2 = 0;
+      var count3 = 0;
+       var count4 = 0;
+
+
+  function over(obj) {
+    obj.src="img01_01.jpg";
+  }
+  function out(obj) {
+    obj.src="img01.jpg";
+  }
+  function over1(obj) {
+    obj.src="img02_01.jpg";
+  }
+  function out1(obj) {
+    obj.src="img02.jpg";
+  }
+  function over2(obj) {
+    obj.src="img03_01.jpg";
+  }
+  function out2(obj) {
+    obj.src="img03_01.jpg";
+  }
+  function over3(obj) {
+    obj.src="img04.jpg";
+  }
+  function out3(obj) {
+    obj.src="img04_01.jpg";
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
   </body>
 </html>
